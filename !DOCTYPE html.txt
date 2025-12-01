@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Threads - Wear Your Ideas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+    ul {
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+    .photo {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+    .contact-info a {
+      color: #222;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR4AAAC5CAMAAAB9RJeaAAAA9FBMVEUAAABvb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb2P5XcCAAAHoUlEQVR4nO2d63biOhBFMS40sN5dFtdVbU//+fXpsaKoHoAEo2prTZs2bNmyZ6aXbmvMTM7lhEcQH3ZvBeKIv8GG04Cr4IJ6HFiNUDnuES/wqGDcYK9n2TJuKDbQw1xBdO+Myiy7AEZf3OMuDMyBpIdROld9ONAs1RmFYBLQwxrHeZeyMGvKaS5HZGQzDMOmuZLWEQ7hwIBXeCknYRcdAoArCceo9A9z1w6LZBL4zIEVQ2skHs0XWBncE0fknbOFbXIK6h92AoG3kBNcOmjAcSmkaQ5HA3sTjp9i4DHKWqN+XylN0GFxO7FhAoB1QSOg6zN3o3DhkCxzCU7FXICULWyQFAp6cVAagFlJodZ4G3m7CLgR7qFAiCU0AW3MuEbl/A3E6/EcSPn3D4SpBji4ANugSQUPj9y1Nsj+4gQWc6E08ec5AglM7coAE0kY7gQEeSkDAqoGuixRkOfRjq4LhSK7CCSlW04MM55JwHyvwywlP6ggQeA4oxMgTRNQROA6qAgSqS8rAKv7PLIXDzjqgAcOY4TnoSCG0CvofYUgI/YBUKoAArT8XpiAjkKMoeaikEy14fGmLOEEHsYVLmAK4SoFAr0r0CRh3NgDwsrH/6xUCR8zJ+D0BR5kqDg2wlhQBkBJJK6A0hzIYPh5swIbAwAVtZq5IAapJC2MnmKH3Dp8aWPHxCSxBCusEB5TrL8iCOAEny+IoRUBOcOCvSg0T/52G5WXYTQtZKw/gwc6b6sHZ0wwYsoxW88x9F1VQ6E4I0W5HQPAko0QOXyoD9FUHlHS6OKTUL1wgSVEyBD/RZmz5Ab4SgUWyI0wNbhguLqHPa7S0XWOGDQxOSnlIGI5ToA1WhGqJvR0h8hT1OcIUyDk8DJXRP4KsPiLK/RaCU2w6slzOEvRShEWIPXRo6FEOzIoSNLJI4yQg81Dn9VAnFEjBiqFlDsY9WvD49JTp5TiNBO7PElnCQijLCkfwRqPh35MS3UYCJ4kMIQHNTkggYkCXA7cQwYnG4IIAcQ6DYky2gjhU4EQoPZ4yoHoD0n6ZkwHOu7BMBxepbJAMeMIQ7OIBNJo4QJ0nTxhML3ju+1BzqOd9koD9p5IEHo84gx8iEvoC7P0dAxh/E0NnkSRO0PYc6lIBDvgJ7TtiHnYY3X5FG6Isl6HKdyHCf2sBRojRA7E16/jgAlEMaOmqZNCmAqFJH+w4H3ChDqewbCKPImAEsUpgwCo7gwTqHAQrHQTAopH0TR1jIaO3JyJz9POgXBlZ9OkgXt2b6FiEjZKYaBqRj1jxoQAog7ayJKwoXyQmGqP8HSAXAlxkAHE9DpMGPgrSEeH1+CFcvo4J3nWAayxERhxQ1hRYL6Ci4f6LPUEk45eo6FBOqIoWoYwW8bYpF6PwIyQOKLVMwD9phxHXrCzFqBGyQRsgP4JwoO+wi9TGqAqWYJC0q+NcHZLxQzv8yP9PqRyTyq7MB7pZP4Zwm5gqQ4xuEGovKj0lcu4S+eq5j0A8B3oSmVAQeEZCoK2a4PB9Ui7L0iCu3Bw2Ym7jxQ7yZLXhN6+0fXGCdDaT0fyFkoebIhNUbpYXf+h1xnN7C1ydX1/g6aC+OV4BW5cU5b0d5Dp9FlYdA/3dX3lm+CcWdKlDVXzP1+ptm5M7GvCbgAAAABJRU5ErkJggg==" alt="Creative Threads Logo" />
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products & Pricing</a>
+    <a href="#design">Create Your Design</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h1>Welcome to Creative Threads!</h1>
+  <p>Where your style meets your imagination. We specialize in custom T-shirts and hoodies that let you express yourself through unique, personalized designs. Whether you're a student, part of a club, a sports team, or just love creative fashion, we bring your ideas to life with high-quality, trendy apparel.</p>
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="People wearing custom t-shirts and hoodies" class="photo" />
+  <img src="https://images.unsplash.com/photo-1580894732444-c4bdb5b92c1e?auto=format&fit=crop&w=900&q=80" alt="Design process illustration" class="photo" />
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Creative Threads is a custom clothing brand dedicated to turning your ideas into wearable art. We believe fashion is more than just clothes — it’s a way to tell your story, share your passions, and celebrate your identity.</p>
+  <p>Our mission is to make fashion personal, fun, and meaningful by providing affordable, high-quality custom apparel that stands out from the crowd.</p>
+  <img src="https://images.unsplash.com/photo-1532634993-dbb37f3f4d84?auto=format&fit=crop&w=900&q=80" alt="Behind the scenes printing process" class="photo" />
+</section>
+
+<section id="products">
+  <h2>Our Products & Pricing</h2>
+  <p><strong>Custom T-Shirts</strong><br>Price: 15 AED – 25 AED<br>Soft, durable fabrics with vibrant prints. Perfect for everyday wear or special events.</p>
+  <p><strong>Custom Hoodies</strong><br>Price: 30 AED – 40 AED<br>Cozy and stylish hoodies designed to keep you comfortable and trendy.</p>
+  <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=900&q=80" alt="Custom T-shirts and hoodies" class="photo" />
+</section>
+
+<section id="design">
+  <h2>Create Your Own Design</h2>
+  <p>Got an idea? We’ll bring it to life! Work with us to design custom apparel featuring your creative images, quotes, or school logos. Our easy and collaborative process ensures your vision becomes reality.</p>
+  <ul>
+    <li>Submit your design ideas or artwork</li>
+    <li>Choose your apparel and colors</li>
+    <li>Approve the final mock-up</li>
+    <li>Receive your personalized clothing!</li>
+  </ul>
+  <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef54f4f?auto=format&fit=crop&w=900&q=80" alt="Digital design process" class="photo" />
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions? Ready to start your order? Reach out!</p>
+  <div class="contact-info">
+    <p>Instagram: <a href="https://instagram.com/CreativeThreads" target="_blank">@CreativeThreads</a></p>
+    <p>TikTok: <a href="https://tiktok.com/@CreativeThreads" target="_blank">@CreativeThreads</a></p>
+    <p>Snapchat: CreativeThreads</p>
+    <p>Email: <a href="mailto:info@creativethreads.ae">info@creativethreads.ae</a></p>
+    <p>Phone: +971 50 123 4567</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Customer service" class="photo" />
+</section>
+
+<footer>
+  &copy; 2025 Creative Threads. All rights reserved. | Designed to help you wear your ideas!
+</footer>
+
+</body>
+</html>
